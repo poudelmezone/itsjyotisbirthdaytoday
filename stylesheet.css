@@ -8,9 +8,6 @@ body {
 	transition:background-color linear 5s;
 	overflow-x:hidden;
 }
-.a{
-	;
-}
 .container {
 	display: none;
 }
