@@ -1,45 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Message To You</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    .error .txt{
-	    font-family: 'Poppins', sans-serif;
-        height: 100vh;
-        text-align: center;
-        margin-top: 150px;
-        font-size: 19px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Message To You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-	.error .txt a{
-		text-decoration: none;
-		color: #052eb6;
-		font-weight: 600;
-	}
-    </style>
-</head>
-<body bgcolor="#FFDAB9">
-    <div class="error">
-        <p class="txt">You’re cool and honestly one of the best people I’ve met in my life. <br> I’m really grateful for our friendship—it
-            means more than I say out loud. <br>
 
-            Thanks for talking to me even when I'm being annoying (which is like… always 😭). <br>Here’s to more laughter, more deep talks, more dumb jokes, and STOP BULLYING ME!!!!
-            <br>
-            Stay Awesome
-            <br>
-            -Your Awesome Kaka <br> 👇 <br>
-			<a href="messageforjyoti.html"> 👉 CLICK ME!!! 👈</a> <br>
-			☝
-		</p>
-    </div>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #FFDAB9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .title .text {
+      background: linear-gradient(90deg, #ff416c, #ffb347);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .error {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      gap: 30px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .pic {
+      max-width: 100%;
+      height: auto;
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .pic:hover {
+      transform: scale(1.05);
+    }
+
+    .txt {
+      font-size: 18px;
+      max-width: 500px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    .txt a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #052eb6;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .txt a:hover {
+      color: #ff4500;
+    }
+
+    @media (max-width: 768px) {
+      .error {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .txt {
+        font-size: 16px;
+        padding: 0 10px;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">
+    <span>🎉</span>
+    <span class="text">Happy Birthday Jyoti!!!</span>
+    <span>🎉</span>
+  </h1>
+
+  <div class="error">
+    <img src="jyoti.jpg" alt="jyoti" class="pic" />
+    <p class="txt">
+      You’re cool and honestly one of the best people I’ve met in my life. <br>
+      I’m really grateful for our friendship—it means more than I say out loud. <br>
+      Thanks for talking to me even when I'm being annoying (which is like… always 😭). <br>
+      Here’s to more laughter, more deep talks, more dumb jokes, and STOP BULLYING ME!!!! <br>
+      Stay Awesome <br>
+      -Your Awesome Kaka <br> 👇 <br>
+      <a href="messageforjyoti.html">👉 CLICK ME!!! 👈</a> <br> ☝
+    </p>
+  </div>
 </body>
 </html>
